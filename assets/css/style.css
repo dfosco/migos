@@ -1,0 +1,27 @@
+.house-bg {
+  background: url("../bg.png") center no-repeat #333;
+  background-size: contain
+}
+
+.head-start {
+  transform: translateX(110%);
+  animation: woop 3s 3s infinite normal;
+}
+
+@keyframes woop {
+  0%   { transform: translateX(110%) }
+  50% { transform: translateX(0%) }
+  100%   { transform: translateX(110%) }
+}
+
+
+@media screen and (min-width:30em) {
+  .house-bg {
+    background: url("../bg.png") no-repeat #333;
+    background-size: unset
+  }
+
+  .w-unset-ns {
+    width: unset;
+  }
+}
